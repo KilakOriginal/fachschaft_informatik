@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title id="page_title">{{text.title}}</title>
+        {% load static %}  {# load dependencies #}
+        <link rel="shortcut icon" href="{% static 'favicon.ico'%}"/>
+        <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+        <link rel="stylesheet" href="{% static 'styles.min.css'%}">
+        <script src="{% static 'bootstrap.min.js'%}"></script>
+    </head>
+    <body>
+        <h4 id="meta-heading"><span>Fachschaft Informatik</span></h4>
+        <h1 id="title"><strong>{{text.title}}</strong></h1>
+        <p class="box-paragraph" id="about">{{text.about}}</p>
+        <form method="POST" action="{% url 'kummerkasten-form' %}?lang={{lang}}">  {# preserve language #}
+            {% csrf_token %}  {# prevent cross site request forgery #}
+            <input type="text" id="subject" name="subject" placeholder="{{text.subject_placeholder}}"></input>
+            <textarea id="message" name="message" placeholder="{{text.message_placeholder}}"></textarea>
+            <button class="btn btn-primary" type="submit" id="submit" name="submit">{{text.send_button}}</button>
+            <p><b><a href="https://www.fs-infmath.uni-kiel.de/wiki/Hauptseite" style="color: #454545;" id="go_back">{{text.go_back}}</a></b></p>
+        </form>
+    </body>
+</html>

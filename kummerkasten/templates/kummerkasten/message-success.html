@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title id="page_title">{{text.title}}</title><link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        {% load static %}  {# load dependencies #}
+        <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+        <link rel="stylesheet" href="{% static 'styles.min.css'%}">
+        <script src="{% static 'bootstrap.min.js'%}"></script>
+    </head>
+    <body style="width: 930px;max-width: 100%;margin-left: auto;margin-right: auto;padding: 0;">
+        <h4 id="meta-heading"><span style="color: rgb(112, 114, 118);">Fachschaft Informatik</span></h4>
+        <h1 id="title"><strong>{{text.title}}</strong></h1>
+        <p class="box-paragraph" id="about">{{text.success}}</p>
+        <p style="text-align: center;"><b><a href="https://www.fs-infmath.uni-kiel.de/wiki/Hauptseite" style="color: #454545;" id="go_back">{{text.go_back}}</a></b></p>
+    </body>
+</html>
