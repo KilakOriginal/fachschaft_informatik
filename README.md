@@ -7,7 +7,7 @@ Web apps for the "Fachschaft Informatik" (Chritian Albrechts University, Kiel)
 A simple form for anonymous email submissions. I might also permit/implement file uploads in the future.
 
 ## Deployment
-Make sure to create the "/src/kummerkasten/email_config.json" and "/src/fachschaft_informatik/secret_key.txt" files with your smtp credentials/configuration and desired key respectively.
+Make sure to create the </src/kummerkasten/email_config.json> and </src/fachschaft_informatik/secret_key.txt> files with your smtp credentials/configuration and desired key respectively.
 
 **"email_config.json" might look something like this:**
 ```json
@@ -24,7 +24,11 @@ Make sure to create the "/src/kummerkasten/email_config.json" and "/src/fachscha
     my_secret_django_key
 ```
 
-Before deploying, make sure to set up your server to handle the static files **or** alternatively run "python manage.py [YOUR_IP]:[PORT] --insecure" from the source directory (**NOT** recommended!). For more info see [deployment checklist](https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/).
+Before deploying, make sure to set up your server to handle the static files **or** alternatively run 
+```python 
+    python manage.py [YOUR_IP]:[PORT] --insecure
+```
+from the source directory (**NOT** recommended!). For more info see [deployment checklist](https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/).
 
 You will need to add your server to the "ALLOWED_HOSTS" list in the settings.py file located at /src/fachschaft_informatik/settings.py.
 
