@@ -31,7 +31,7 @@ python manage.py [YOUR_IP]:[PORT] --insecure
 ```
 from the source directory (**NOT** recommended!). Another option still for serving your static files would be [AWS](https://aws.amazon.com/) or similar services if you do not wish to host them on your own server. For more info see [deployment checklist](https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/).
 
-You will need to add your server to the `ALLOWED_HOSTS` list in the settings file located at `/src/fachschaft_informatik/settings.py`.
+You will need to add your server to the `ALLOWED_HOSTS` list in the settings file located at `/%project_source%/fachschaft_informatik/settings.py`.
 
 **"ALLOWED_HOSTS" might look something like this:**
 ```python
