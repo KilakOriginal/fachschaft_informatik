@@ -27,7 +27,7 @@ DEBUG=False
 
 Before deploying, remember to [set up your server to handle static files](https://docs.djangoproject.com/en/4.1/howto/static-files/deployment/) **or** alternatively run 
 ```python 
-python manage.py [YOUR_IP]:[PORT] --insecure
+python manage.py runserver [YOUR_IP]:[PORT] --insecure
 ```
 from the source directory (**NOT** recommended!). Another option still for serving your static files would be [AWS](https://aws.amazon.com/) or similar services if you do not wish to host them on your own server. For more info see [deployment checklist](https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/).
 
