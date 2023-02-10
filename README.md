@@ -7,7 +7,7 @@ Web apps for the "Fachschaft Informatik" (Chritian Albrechts University, Kiel)
 A simple form for anonymous email submissions. I might also permit/implement file uploads in the future.
 
 ## Deployment
-Make sure to create the `/src/kummerkasten/email_config.json` and `/src/fachschaft_informatik/secret_key.txt` files with your smtp credentials/configuration and desired key respectively.
+Make sure to create the `/src/kummerkasten/email_config.json` file with your smtp credentials/configuration.
 
 **"email_config.json" might look something like this:**
 ```json
@@ -18,9 +18,6 @@ Make sure to create the `/src/kummerkasten/email_config.json` and `/src/fachscha
    "password":"my_password"
 }
 ```
-
-**"secret_key.txt" might look something like this:**
-`my_secret_django_key`
 
 Before deploying, make sure to set up your server to handle the static files **or** alternatively run 
 ```python 
