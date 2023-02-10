@@ -28,7 +28,7 @@ python manage.py [YOUR_IP]:[PORT] --insecure
 ```
 from the source directory (**NOT** recommended!). For more info see [deployment checklist](https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/).
 
-You will need to add your server to the `"ALLOWED_HOSTS"`{python} list in the settings.py file located at /src/fachschaft_informatik/settings.py.
+You will need to add your server to the `ALLOWED_HOSTS`{:.python} list in the settings.py file located at /src/fachschaft_informatik/settings.py.
 
 **"ALLOWED_HOSTS" might look something like this:**
 ```python
