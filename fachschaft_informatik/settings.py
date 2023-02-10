@@ -28,7 +28,7 @@ with open(f'{dir_path}/secret_key.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["localhost", "192.168.178.25"]
+ALLOWED_HOSTS = ["localhost"]
 
 
 # Application definition
