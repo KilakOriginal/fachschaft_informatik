@@ -7,7 +7,13 @@ Web apps for the "Fachschaft Informatik" (Chritian Albrechts University, Kiel)
 A simple form for anonymous email submissions. I might also permit/implement file uploads in the future.
 
 ## Deployment
-Make sure to create the `/src/kummerkasten/email_config.json` file with your smtp credentials/configuration.
+First off, you'll want to create a `/etc/secrets/email_config.json` file with your smtp credentials/configuration and set the necessary environment variables, namely `SECRET_KEY` and `DEBUG`.
+
+**For deployment you'd create the following variables:**
+```bash
+SECRET_KEY=my_secret_random_django_key
+DEBUG=False
+```
 
 **"email_config.json" might look something like this:**
 ```json
@@ -19,11 +25,11 @@ Make sure to create the `/src/kummerkasten/email_config.json` file with your smt
 }
 ```
 
-Before deploying, make sure to set up your server to handle the static files **or** alternatively run 
+Before deploying, remember to [set up your server to handle static files](https://docs.djangoproject.com/en/4.1/howto/static-files/deployment/) **or** alternatively run 
 ```python 
 python manage.py [YOUR_IP]:[PORT] --insecure
 ```
-from the source directory (**NOT** recommended!). For more info see [deployment checklist](https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/).
+from the source directory (**NOT** recommended!). Another option still for serving your static files would be [AWS](https://aws.amazon.com/) or similar services if you do not wish to host them on your own server. For more info see [deployment checklist](https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/).
 
 You will need to add your server to the `ALLOWED_HOSTS` list in the settings file located at `/src/fachschaft_informatik/settings.py`.
 
