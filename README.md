@@ -19,7 +19,7 @@ Make sure to create the "email_config.json" and "secret_key" files with your smt
     }
 ```
 
-**"secret_key" might look something like this:**
+**"secret_key.txt" might look something like this:**
 ```
     my_secret_django_key
 ```
