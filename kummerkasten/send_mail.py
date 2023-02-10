@@ -16,7 +16,7 @@ class EmailForm(forms.ModelForm):
 import os.path
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-def send_mail(to: str, subject: str, message: str, configuration_file: str = f"{dir_path}/email_config.json"):
+def send_mail(to: str, subject: str, message: str, configuration_file: str = f"/etc/secrets/email_config.json"):
     '''Send an email - to: Recipient, subject: Subject line, message: Email body, configuration_file: .json-file path containing configuration data'''
     configuration = {}  # Contains configuration data
     import smtplib, ssl, json
