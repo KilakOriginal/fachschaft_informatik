@@ -1,6 +1,6 @@
 # App specific
-email_config.json
-secret_key.txt
+kummerkasten/email_config.json
+fachschaft_informatik/secret_key.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
