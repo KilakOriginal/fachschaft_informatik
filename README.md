@@ -4,7 +4,9 @@ Web apps for the "Fachschaft Informatik" (Chritian Albrechts University, Kiel)
 
 ## Apps
 ### Kummerkasten
-A simple form for anonymous email submissions. I might also permit/implement file uploads in the future.
+A simple form for anonymous email submissions. I might also permit/implement file uploads in the future. 
+* [Website (english)](https://fachschaft-informatik-cau.onrender.com/kummerkasten/?lang=en)
+* [Website (german)](https://fachschaft-informatik-cau.onrender.com/kummerkasten/?lang=de)
 
 ## Deployment
 First off, you'll want to create a `/etc/secrets/email_config.json` file with your smtp credentials/configuration and set the necessary environment variables, namely `SECRET_KEY` and `DEBUG`.
