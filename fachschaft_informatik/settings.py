@@ -26,7 +26,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ['DEBUG']
 
-ALLOWED_HOSTS = ["localhost", "fachschaft-informatik-cau.onrender.com"]
+ALLOWED_HOSTS = [host.strip() for host in os.environ.get('ALLOWED_HOSTS').split(",")]
 
 
 # Application definition
