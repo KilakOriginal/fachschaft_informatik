@@ -4,7 +4,7 @@ Web apps for the "Fachschaft Informatik" (Chritian Albrechts University, Kiel)
 
 ## Apps
 ### Kummerkasten
-A simple form for anonymous email submissions. I might also permit/implement file uploads in the future. 
+A simple form for anonymous email submissions. 
 * [Website (english)](https://fachschaft-informatik-cau.onrender.com/kummerkasten/?lang=en)
 * [Website (german)](https://fachschaft-informatik-cau.onrender.com/kummerkasten/?lang=de)
 
