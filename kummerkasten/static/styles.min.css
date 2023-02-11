@@ -44,7 +44,7 @@ form {
 }
 input, #subject {
     display: block;
-    background: #c2d7ff;
+    background: #DCEAFF;
     width: 900px;
     max-width: 100%;
     height: 60px;
@@ -58,7 +58,7 @@ input, #subject {
 textarea, #message {
     display: block;
     resize: none;
-    background: #c2d7ff;
+    background: #DCEAFF;
     width: 900px;
     max-width: 100%;
     height: 400px;
@@ -75,3 +75,7 @@ button, #submit {
     margin-bottom:10px;
     border-radius: 1.5rem;
 }
+::placeholder {
+    color: #343a3e;
+    opacity: 0.75;
+  }
