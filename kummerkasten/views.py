@@ -33,7 +33,7 @@ def messageForm(request):
         # Display a 404 page if an unknown language is specified
         if not os.path.isfile(file_path):
             from django.http import HttpResponseNotFound
-            return HttpResponseNotFound("<h1>Error Code 405: Illegal query</h1><br><a href=\"./?lang=de\">Open form (german)</a><br><a href=\"./?lang=en\">Open form (english)</a>")
+            return HttpResponseNotFound("<h1>Error: Illegal query</h1><br><a href=\"./?lang=de\">Open form (german)</a><br><a href=\"./?lang=en\">Open form (english)</a>")
     
     # Load the language file contents into the text dict
     with open(file_path, encoding='utf-8') as f:

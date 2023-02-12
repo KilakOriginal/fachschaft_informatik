@@ -1,11 +1,11 @@
 {
-    "title":"Submit a complaint",
+    "title":"Agony Column",
     "about":"If you would like to inform the Student Council of any concerns, complaints or suggestions regarding university facilities, students or staff within the scope of your studies (regardless of whether you are majoring or minoring), you can send them to us anonymously using the following form. Please enter the subject and your concern in the text fields below and click the \"Send\" button. Remember to also include your email address should you wish to receive a reply.",
     "subject_placeholder":"Subject (optional, up to 80 characters)",
     "message_placeholder":"Please enter your message (up to 5000 characters)",
     "send_button":"Send",
-    "go_back":"Homepage fachschaft",
-    "success":"Your message was sent successfully!",
-    "error":"Error sending message; Make sure you have an active internet connection. If the problem persists, please contact ",
+    "go_back":"Back to homepage",
+    "success":"Success, message sent!",
+    "error":"Error sending message; Make sure you have an active internet connection. If this problem persists, please contact ",
     "recipient":"kilakOri@proton.me"
 }

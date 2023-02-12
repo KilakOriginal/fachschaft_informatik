@@ -4,8 +4,8 @@
     "subject_placeholder":"Betreff (optional, bis zu 80 Zeichen)",
     "message_placeholder":"Geben Sie hier Ihr Anliegen ein (bis zu 5000 Zeichen)",
     "send_button":"Senden",
-    "go_back":"Zurück zur Fachschaft",
-    "success":"Ihre Nachricht wurde erfolgreich gesendet!",
+    "go_back":"Zurück zur Hauptseite",
+    "success":"Erfolg, Ihre Nachricht wurde gesendet!",
     "error":"Ihre Anfrage konnte nicht übermittelt werden! Stellen Sie sicher, dass Sie mit dem Internet verbunden sind und versuchen Sie es erneut. Sollte das Problem weiterhin bestehen, wenden Sie sich bitte an ",
     "recipient":"kilakOri@proton.me"
 }
