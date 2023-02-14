@@ -6,14 +6,6 @@ from django.shortcuts import redirect
 def homePage(request):
     return redirect("https://www.fs-infmath.uni-kiel.de/wiki/Hauptseite")
 
-# Success page (local app)
-def messageSuccess(request):
-    return render(request, "kummerkasten/message-success.html")
-
-# Error page (local app)
-def messageError(request):
-    return render(request, "kummerkasten/message-error.html")
-
 # Message form (Kummerkasten local app home)
 def messageForm(request):
     import os.path, json
